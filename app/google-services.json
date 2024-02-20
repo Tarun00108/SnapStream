@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "653156210942",
+    "project_id": "snapstream-ce0cf",
+    "storage_bucket": "snapstream-ce0cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653156210942:android:a4d05338e834876c5bedaf",
+        "android_client_info": {
+          "package_name": "com.example.snapstream"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACs18-LVTuldbliBVomtWM-Wl2gBL_F3c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

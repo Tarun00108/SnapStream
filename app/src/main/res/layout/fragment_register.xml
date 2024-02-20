@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RegisterFragment"
+    android:background="#B58EFA">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/start"
+            android:elevation="5dp"
+            android:background="@drawable/circular_bg"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:padding="15dp"
+            android:background="@drawable/corner"
+            android:layout_marginTop="5dp">
+        <TextView
+            android:id="@+id/Logo"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="#743DD6"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="abc@gmail.com"
+            android:textColor="@color/black"
+            android:background="@drawable/corner"
+            android:elevation="5dp"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="15dp"/>
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"
+            android:background="@drawable/corner"
+            android:elevation="5dp"
+            android:layout_marginTop="15dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:gravity="center">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/countrycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_showFlag="false"/>
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Phone_number"
+            android:textColor="@color/black"
+            android:inputType="phone"
+            android:background="@drawable/corner"
+            android:elevation="5dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/registerbtn"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Send otp"
+            android:elevation="5dp"
+            android:layout_marginTop="25dp"
+            />
+    </LinearLayout>
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="#743DD6"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/alreadyLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:text="Already register? Please Login."
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+          <ImageView
+              android:id="@+id/Gpic"
+              android:layout_width="60dp"
+              android:layout_height="wrap_content"
+              android:src="@drawable/gpic">
+          </ImageView>
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

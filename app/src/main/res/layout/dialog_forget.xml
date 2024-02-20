@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogforget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:padding="20dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/dialogBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_box"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/forgetTittle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/lavendor_round"
+            android:padding="10dp"
+            android:text="Forget Password"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/enterEl"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:text="Enter email address"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@+id/forgetTittle"
+            app:layout_constraintTop_toBottomOf="@id/forgetTittle" />
+
+        <EditText
+            android:id="@+id/forgetemail"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="20dp"
+            android:hint="abc@gmail.com"
+            android:textColor="@color/black"
+            app:layout_constraintLeft_toLeftOf="@id/enterEl"
+            app:layout_constraintTop_toBottomOf="@id/enterEl" />
+
+        <Button
+            android:id="@+id/btncancel"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="cancel"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forgetemail"
+            app:layout_constraintBottom_toBottomOf="@id/dialogBox"/>
+
+        <Button
+            android:id="@+id/resetBtn"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="20dp"
+            android:text="reset"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forgetemail"
+            app:layout_constraintBottom_toBottomOf="@id/dialogBox"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
